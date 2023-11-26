@@ -10,7 +10,7 @@ Frontend: Streamlit
 `$pip install -r requirements.txt` 
 
 2. Spin up Django Server \
-`$python Backend\manage.py runserver`
+`$python Backend\stockanalysisandprediction\manage.py runserver`
 
 3. Spin up Streamlit UI \
 TBF
