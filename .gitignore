@@ -56,10 +56,10 @@ cover/
 *.pot
 
 # Django stuff:
-./Backend/*.log
-./Backend/local_settings.py
-./Backend/db.sqlite3
-./Backend/db.sqlite3-journal
+./backend/*.log
+./backend/local_settings.py
+./backend/db.sqlite3
+./backend/db.sqlite3-journal
 
 # Flask stuff:
 instance/
