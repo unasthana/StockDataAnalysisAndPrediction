@@ -7,7 +7,7 @@ import subprocess
 current_dir = os.path.dirname(os.path.realpath(__file__))
 zip_file_path = current_dir
 csv_file_path = os.path.join(current_dir, 'all_stocks_5yr.csv')
-sqlite_db_path = os.path.join(current_dir, "stockanalysisandprediction", "db.sqlite3")
+sqlite_db_path = os.path.join(current_dir, "db.sqlite3")
 
 os.makedirs(zip_file_path, exist_ok=True)
 
