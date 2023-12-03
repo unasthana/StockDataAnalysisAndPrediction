@@ -1,1 +1,1 @@
-web: gunicorn backend.stockanalysisandprediction.wsgi --log-file -
+web: gunicorn stockanalysisandprediction.wsgi --log-file -
