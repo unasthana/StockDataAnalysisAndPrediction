@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import StockViewSet
+from .views import StockViewSet, StockList, StockDetail
 
 router = DefaultRouter()
 router.register(r'stocks', StockViewSet)
@@ -25,4 +25,6 @@ router.register(r'stocks', StockViewSet)
 urlpatterns = [
     path('api/', include(router.urls)),
     path("admin/", admin.site.urls),
+    path('stocks/', StockList.as_view(), name='stock-list'),
+    path('stocks/<str:ticker>/', StockDetail.as_view(), name='stock-detail'),
 ]
