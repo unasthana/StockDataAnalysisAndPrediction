@@ -72,9 +72,6 @@ TEMPLATES = [
 WSGI_APPLICATION = "stockanalysisandprediction.wsgi.application"
 
 
-# Database
-# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
-
 import dj_database_url
 
 DATABASES = {
