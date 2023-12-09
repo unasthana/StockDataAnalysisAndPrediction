@@ -121,7 +121,7 @@ def zipModels(source_folder, destination_folder):
 
       shutil.make_archive(destination_path, 'zip', source_path)
 
-  shutil.make_archive("/content/zipped_models", 'zip', destination_folder)
+  shutil.make_archive("/content/zipped_prediction_models", 'zip', destination_folder)
 
   print("Zipping completed!")
 
@@ -202,7 +202,7 @@ def main():
                                           y_test = y_test)])
 
     zipModels(source_folder = '/content/prediction_models',
-              destination_folder = '/content/zipped_models')
+              destination_folder = '/content/zipped_prediction_models')
     
     
 if __name__ == "__main__":
